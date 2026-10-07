@@ -84,8 +84,141 @@ a:hover {
   border-bottom-color: #7dd3e8;
 }
 
+.nav-label {
+  color: #7dd3e8;
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  font-size: 0.92rem;
+}
+
 .page {
   padding: 2.5rem 0 3.5rem;
+}
+
+.hero {
+  background: var(--night);
+  color: #f7f4ee;
+}
+
+.hero-inner {
+  width: min(52rem, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 1.5rem 0 3rem;
+}
+
+.hero h1,
+.hero .lede {
+  color: #f7f4ee;
+}
+
+.hero .lede {
+  max-width: 36rem;
+  margin-bottom: 0;
+}
+
+.hero .meta {
+  color: #7dd3e8;
+}
+
+.home .header-inner,
+.home .page,
+.home .site-footer .footer-inner {
+  width: min(52rem, calc(100% - 2rem));
+}
+
+.home .page {
+  padding-top: 1.75rem;
+}
+
+.pitches {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.pitch {
+  display: flex;
+  flex-direction: column;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 1.35rem 1.25rem 1.45rem;
+}
+
+.pitch-head {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 0.85rem;
+}
+
+.pitch-head .meta,
+.pitch-head h2 {
+  margin: 0;
+}
+
+.pitch-head h2 {
+  margin-top: 0.15rem;
+}
+
+.pitch-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 18px;
+  object-fit: cover;
+  flex: none;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(28, 25, 21, 0.16);
+}
+
+.pitch h2 {
+  margin-top: 0.35rem;
+}
+
+.pitch p {
+  margin: 0.35rem 0 0;
+}
+
+.stores {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.15rem;
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+.store-badge {
+  display: block;
+  width: auto;
+}
+
+.store-apple {
+  height: 40px;
+}
+
+.store-google {
+  height: 60px;
+  margin-left: -6px;
+}
+
+.coming {
+  margin: 0.15rem 0 0;
+  color: var(--muted);
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  font-size: 0.85rem;
+}
+
+.pitch-cta {
+  display: inline-block;
+  margin-top: 1rem;
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+@media (min-width: 720px) {
+  .pitches {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .sheet {
@@ -161,6 +294,15 @@ h3 {
   font-size: 0.98rem;
 }
 
+.card-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.9rem;
+  margin: 0.55rem 0 0;
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  font-size: 0.92rem;
+}
+
 ul {
   padding-left: 1.2rem;
 }
@@ -178,6 +320,10 @@ li + li {
 
 .footer-inner {
   padding: 1.25rem 0 2rem;
+}
+
+.copyright {
+  margin: 0.45rem 0 0;
 }
 
 .site-footer a {
