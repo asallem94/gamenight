@@ -186,6 +186,17 @@ a:hover {
   padding-top: 1rem;
 }
 
+.store-link {
+  display: block;
+  line-height: 0;
+  text-decoration: none;
+}
+
+.store-link:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
 .store-badge {
   display: block;
   width: auto;
@@ -197,14 +208,10 @@ a:hover {
 
 .store-google {
   height: 60px;
-  margin-left: -6px;
 }
 
-.coming {
-  margin: 0.15rem 0 0;
-  color: var(--muted);
-  font-family: "Avenir Next", "Segoe UI", sans-serif;
-  font-size: 0.85rem;
+.store-link + .store-link .store-google {
+  margin-left: -6px;
 }
 
 .pitch-cta {
